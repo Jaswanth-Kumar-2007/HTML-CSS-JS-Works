@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Customer Feedback Survey
+    </title>
+
+    <body>
+        <h1>Customer FeedBack Survey</h1>
+        <p>Please take a moment to Complete the Survey Below</p>
+        <br>
+        <form>
+            <label for="Name">Your Name:</label>
+            <input type="text" id="Name" name="Name" required><br><br>
+            <label for="Age">Your Age:</label>
+            <input type="number" id="Age" name="Age" required><br><br>
+            <label for="Color">Favorite Color:</label>
+            <select id="Color" name="Color">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+            </select><br><br>
+            <label for="feedback">Your Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" required>
+            </textarea><br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+        <br>
+        <h2>
+            Instructions:
+        </h2>
+        <ul>
+            <li>Fill in your Name and age in the first two fields</li>
+            <li>Select you favorite color from the fropdown list</li>
+            <li>Provide your feedback in the text bocx below</li>
+            <li>Click the "Submit" button to submit your responses</li>
+        </ul>
+        
+        <h2>
+            Survey Responses
+        </h2>
+    
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Favorite Color</th>
+                <th>Feedback</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>30</td>
+                <td>Blue</td>
+                <td>Great Service!Keep it Up</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>25</td>
+                <td>Green</td>
+                <td>Would Love to see more options</td>
+            </tr>
+        </table>
+    </body>
+</html>
