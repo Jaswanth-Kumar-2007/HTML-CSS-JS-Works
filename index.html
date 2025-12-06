@@ -3,31 +3,105 @@
     <head>
         <title>Base Page</title>
         <style>
-            body{
-                background-color: blue;
-                display: flex;
-                flex-direction: row;
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
             }
-            div{
-                align-items: center;
-                justify-content: center;
+            html{
+                scroll-behavior: smooth;
+            }
+            header{
                 text-align: center;
-                justify-items: center;
-                background-color: lightblue;
-                width: 100%;
+                padding:1rem;
+                background-color: bisque;
+                border:1px dotted black;
             }
-            div:hover{
-                background-color: white;
-                color:black;
+            nav{
+                display:inline-block;
+                top:0;
+                text-align: end;
+                padding:10px;
+                width:100%;
+                background-color: antiquewhite;
+            }
+            nav a{
+                margin:10px;
+            }
+            body{
+                min-height:100vh;
+                background-color: blanchedalmond;
+            }
+            body div{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+            section{
+                margin-top: 50vh;
+                min-height: 10vh;
+                min-width: 1vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: blanchedalmond;
+                border:1px solid black;
+                width:20%;
+                animation-name: sec;
+                animation-duration: 5s;
+                animation-delay: 1s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes sec{
+                0%{
+                    transform: translateX(0);
+                }
+                33%{
+                    transform: translateX(33%);
+                }
+                66%{
+                    transform: translateX(-33%);
+                }
+                100%{
+                    transform: translateX(0);
+                }
+            }
+            section:hover{
+                animation: none;
+                background-color: aqua;
+            }
+            footer{
+                position:sticky;
+                width:100%;
+                bottom:0;
+                background-color: antiquewhite;
+                text-align: center;
             }
         </style>
     </head>
     <body>
+        <header>
+            <h1>Base Page</h1>
+        </header>
+        <nav>
+            <a href="#Portfolio">Portfolio</a>
+            <a href="#OnlineSurveySystem">OnlineSurveySystem</a>
+            <a href="#Calculator">Calculator</a>
+        </nav>
         <div>
-            <a href="Pages/Portfolio.html">Portfolio</a><br>
-            <a href="Pages/OnlineSurveySystem.html">Online Survey System</a><br>
-            <a href="Pages/Calculator.html">Calculator</a><br>
-            <a href="Pages/PersonalBlog.html">PersonalBlog</a>
+            <section id="Portfolio">
+                <a href="Pages/Portfolio.html">Portfolio</a><br>
+            </section>
+            <section id="OnlineSurveySystem">
+                <a href="Pages/OnlineSurveySystem.html">Online Survey System</a><br>
+            </section>
+            <section id="Calculator">
+                <a href="Pages/Calculator.html">Calculator</a><br>
+            </section>
+            <a id="PersonalBlog" href="Pages/PersonalBlog.html">PersonalBlog</a>
         </div>
+        <footer>
+            <h1>Contact me for More Support</h1>
+        </footer>
     </body>
 </html>
