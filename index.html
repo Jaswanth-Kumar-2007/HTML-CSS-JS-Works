@@ -1,107 +1,29 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Base Page</title>
-        <style>
-            *{
-                margin:0;
-                padding:0;
-                box-sizing: border-box;
-            }
-            html{
-                scroll-behavior: smooth;
-            }
-            header{
-                text-align: center;
-                padding:1rem;
-                background-color: bisque;
-                border:1px dotted black;
-            }
-            nav{
-                display:inline-block;
-                top:0;
-                text-align: end;
-                padding:10px;
-                width:100%;
-                background-color: antiquewhite;
-            }
-            nav a{
-                margin:10px;
-            }
-            body{
-                min-height:100vh;
-                background-color: blanchedalmond;
-            }
-            body div{
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-            }
-            section{
-                margin-top: 50vh;
-                min-height: 10vh;
-                min-width: 1vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: blanchedalmond;
-                border:1px solid black;
-                width:20%;
-                animation-name: sec;
-                animation-duration: 5s;
-                animation-delay: 1s;
-                animation-iteration-count: infinite;
-            }
-            @keyframes sec{
-                0%{
-                    transform: translateX(0);
-                }
-                33%{
-                    transform: translateX(33%);
-                }
-                66%{
-                    transform: translateX(-33%);
-                }
-                100%{
-                    transform: translateX(0);
-                }
-            }
-            section:hover{
-                animation: none;
-                background-color: aqua;
-            }
-            footer{
-                position:sticky;
-                width:100%;
-                bottom:0;
-                background-color: antiquewhite;
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Base Page</h1>
-        </header>
-        <nav>
-            <a href="#Portfolio">Portfolio</a>
-            <a href="#OnlineSurveySystem">OnlineSurveySystem</a>
-            <a href="#Calculator">Calculator</a>
-        </nav>
-        <div>
-            <section id="Portfolio">
-                <a href="Pages/Portfolio.html">Portfolio</a><br>
-            </section>
-            <section id="OnlineSurveySystem">
-                <a href="Pages/OnlineSurveySystem.html">Online Survey System</a><br>
-            </section>
-            <section id="Calculator">
-                <a href="Pages/Calculator.html">Calculator</a><br>
-            </section>
-            <a id="PersonalBlog" href="Pages/PersonalBlog.html">PersonalBlog</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Main Page</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="time">08:00AM</div><br>
+        <div id="head">KJK</div><br>
+        <div id="bgBox">
+            <button id="themeToggle">Switch Theme</button>
         </div>
-        <footer>
-            <h1>Contact me for More Support</h1>
-        </footer>
-    </body>
+        <div id="battery">80%</div>
+    </header>
+    <main>
+        <div id="calculator">
+            <a href="Pages/Calculator/calculator.html"> 
+                <img src="Assets/calculator.png" alt="calculator" width="512px" height="512px">
+            </a><br>
+            <p>Calculator</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
 </html>
