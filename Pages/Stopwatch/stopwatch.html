@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>StopWatch</title>
+    <link href="stopwatch.css" rel="stylesheet">
+</head>
+<body>
+    <div id="stopwatch">
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="Start()" id="start">Start</button>
+            <button onclick="Stop()" id="stop">Stop</button>
+            <button onclick="Reset()" id="reset">Reset</button>
+        </div>
+    </div>
+    <div id="back">
+        <button><a href="/">Back</a></button>
+    </div>
+    <script src="stopwatch.js"></script>
+</body>
+</html>

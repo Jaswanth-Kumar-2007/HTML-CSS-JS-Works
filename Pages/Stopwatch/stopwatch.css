@@ -1,0 +1,102 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+}
+
+
+#stopwatch{
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: hsl(0,0%,15%);
+   border-radius: 15px;
+   border:2px solid black;
+   max-width:500px;
+   overflow: hidden; 
+}
+
+
+#display{
+    width:100%;
+    padding:20px;
+    font-size:5rem;
+    border:none;
+    text-align: center;
+    background-color: hsl(0, 25%, 98%);
+    color:grey;
+}
+
+#keys{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:10px;
+    padding:25px;
+}
+
+button{
+    width:100px;
+    height:100px;
+    border-radius:50px;
+    border:none;
+    background-color: hsl(0,0%,30%);
+    color:white;
+    font-size:2rem;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: hsl(0,0%,40%);
+}
+
+button:active{
+    background-color: hsl(0,0%,50%);
+}
+
+#start{
+    background-color: hsl(106, 100%, 35%);
+}
+#start:hover{
+    background-color: hsl(106, 100%, 60%);
+}
+#start:active{
+    background-color: hsl(106,100%,75%);
+}
+
+#stop{
+    background-color: hsl(18, 100%, 35%);
+}
+#stop:hover{
+    background-color: hsl(18, 100%, 60%);
+}
+#stop:active{
+    background-color: hsl(18,100%,75%);
+}
+
+#reset{
+    background-color: hsl(199, 79%, 51%);
+}
+#reset:hover{
+    background-color: hsl(199, 79%, 60%);
+}
+#reset:active{
+    background-color: hsl(199,79%,75%);
+}
+
+#back{
+    position: fixed;
+    top:0;
+    right:0;
+}
+#back button{
+    background-color: black;
+}
+
+#back a{
+    font-size: medium;
+    color:white;
+    text-align: center;
+}
