@@ -23,6 +23,7 @@ main{
     margin-top: 20px;
     margin-left: 20px;
     column-gap: 10px;
+    row-gap: 20px;
     grid-template-columns: repeat(6,1fr);
 }
 img{
@@ -42,4 +43,15 @@ img{
     background-image: url("Assets/dark-bg.jpg");
     background-size:cover;
     color: white;
+}
+
+@media (max-width: 480px) {
+    main{
+        display:grid;
+        margin-top: 20px;
+        margin-left: 20px;
+        column-gap: 10px;
+        row-gap: 20px;
+        grid-template-columns: repeat(4,1fr);
+    }
 }
