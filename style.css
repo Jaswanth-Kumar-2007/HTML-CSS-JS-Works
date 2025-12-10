@@ -4,6 +4,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: "Bitcount Prop Single",Arial;
 }
 header{
     background-color: black;
@@ -47,6 +48,19 @@ img{
     width:64px;
     height:64px;
 }
+#battery img{
+    width:32px;
+    height:32px;
+}
+
+#time,#signal{
+    margin-right:20px;
+}
+#signal img{
+    width:32px;
+    height: 32px;
+}
+
 #head{
     font-family: "Bitcount Prop Single",Arial;
     flex:1;
@@ -57,6 +71,17 @@ img{
 #bgBox{
     margin-right: 20px;
 }
+
+footer{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 40px;
+    text-align: center;
+    font-family: "Bitcount Prop Single",Arial;
+}
 .dark-mode {
     background-image: url("Assets/dark-bg.jpg");
     background-size:cover;
@@ -64,6 +89,9 @@ img{
 }
 
 @media (max-width: 480px) {
+    header{
+        font-size:0.8rem;
+    }
     main{
         display:grid;
         margin-top: 20px;
@@ -71,5 +99,14 @@ img{
         column-gap: 10px;
         row-gap: 20px;
         grid-template-columns: repeat(4,1fr);
+    }
+    footer{
+        position: fixed;
+        bottom:0;
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        row-gap: 20px;
+        text-align: center;
     }
 }
