@@ -78,7 +78,6 @@ footer{
     width:100%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    margin-left: 40px;
     text-align: center;
     font-family: "Bitcount Prop Single",Arial;
 }
@@ -89,8 +88,18 @@ footer{
 }
 
 @media (max-width: 480px) {
+    #jio,#signal,#battery{
+        font-size:0.4rem;
+    }
+    #time{
+        display: none;
+    }
+    img{
+        width:32px;
+        height: 32px;
+    }
     header{
-        font-size:0.8rem;
+        width:100%;
     }
     main{
         display:grid;
@@ -98,6 +107,7 @@ footer{
         margin-left: 20px;
         column-gap: 10px;
         row-gap: 20px;
+        font-size: 0.5rem;
         grid-template-columns: repeat(4,1fr);
     }
     footer{
@@ -105,7 +115,7 @@ footer{
         bottom:0;
         width:100%;
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
         row-gap: 20px;
         text-align: center;
     }
