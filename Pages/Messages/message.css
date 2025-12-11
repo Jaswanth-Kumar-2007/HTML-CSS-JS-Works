@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bitcount Prop Single",Arial;
+    scroll-behavior: smooth;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    position: sticky;
+    top:0;
+    background-color: black;
+    color:white;
+    width:100%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+#message{
+    width:100%;
+}
+.msg{
+    border:1px solid black;
+    width:100%;
+}
+
+.msg h2,p{
+    margin-left: 20px;
+}
+
+.msg:hover{
+    background-color: grey;
+    opacity:50%;
+}
+#newmsg{
+    position: fixed;
+    bottom:30px;
+    right:30px;
+}
+#newmsg button{
+    background-color: rgb(230, 230, 230);
+    width:80px;
+    height:80px;
+    border-radius: 50px;
+}
+
+#newmsg a{
+    font-size: medium;
+    color:black;
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+}
+#back{
+    position: fixed;
+    right:30px;
+    top:30px;
+}
+#back button{
+    background-color: rgb(230, 230, 230);
+    width:80px;
+    height:80px;
+    border-radius: 50px;
+}
+
+#back a{
+    font-size: medium;
+    color:black;
+    text-align: center;
+}
