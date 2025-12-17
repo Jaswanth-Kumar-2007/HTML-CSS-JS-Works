@@ -17,9 +17,12 @@ function updateTime() {
 
     if (hours >12){
         hours = hours - 12;
+        time_display.value = hours + ":" + minutes + ":" + seconds + " " + "PM";
+    }else{
+        time_display.value = hours + ":" + minutes + ":" + seconds + " " + "AM";
     }
 
-    time_display.value = hours + ":" + minutes + ":" + seconds;
+    
 }
 
 setInterval(updateTime, 1000); 

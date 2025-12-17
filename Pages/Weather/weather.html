@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="weather.css" rel="stylesheet">
+</head>
+<body>
+    <div id="weather">
+        <div id="search">
+            <form id="weather-form">
+                <input type="text" id="search-bar" placeholder="Enter-City" required>
+                <input type="submit" id="submit" value="Get-Weather">
+            </form>
+        </div>
+        <div id="weather-bar">
+            <!-- Input Here -->
+             <h1 id="citydisplay">Vizag</h1>
+             <p id="tempdisplay">90</p>
+             <p id="humidity">Humidity: 75%</p>
+             <p id="descdisplay">Clear Skies</p>
+             <p id="weatheremoji">⛅</p>
+        </div>
+        <p id="errordisplay">Please Enter a City</p>
+    </div>
+    <div id="back">
+        <button><a href="/">Back</a></button>
+    </div>
+    <div id="dark">
+        <button>Dark-Mode</button>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>

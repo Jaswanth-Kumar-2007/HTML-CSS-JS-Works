@@ -49,8 +49,10 @@ img{
     height:64px;
 }
 #time_display{
-    width:60px;
+    width:100px;
     height:30px;
+    text-align: center;
+    font-size: 1rem;
     background-color: black;
     color: white;
     margin:0;

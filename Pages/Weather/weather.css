@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Bitcount Prop Single",Arial;
+}
+
+body{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #89CFF0;
+}
+
+#weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:aliceblue;
+    padding:20px;
+    margin:20px;
+    border:2px solid black;
+    border-radius: 50px;
+}
+
+#weather-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+#search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#errordisplay{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#weatheremoji{
+    font-size: 3rem;
+}
+
+
+
+#search-bar{
+    border-radius: 50px;
+    height:25px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#submit{
+    background-color: rgb(97, 228, 97);
+    border-radius: 50px;
+}
+
+#submit:hover{
+    background-color: greenyellow;
+}
+
+#back{
+    position: fixed;
+    right:30px;
+    top:30px;
+}
+#back button{
+    background-color: rgb(230, 230, 230);
+    width:80px;
+    height:80px;
+    border-radius: 50px;
+}
+
+#back a{
+    font-size: medium;
+    color:black;
+    text-align: center;
+}
+
+#dark{
+    position: fixed;
+    right:30px;
+    bottom:30px;
+}
+#dark button{
+    background-color: rgb(230, 230, 230);
+    width:80px;
+    height:80px;
+    border-radius: 50px;
+}
+
+.dark-mode{
+    background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
+}
+
+@media (max-width:480px){
+    #weather{
+        height:100vh;
+        width:100vw;
+        border:10px solid black;
+        margin:0;
+        padding:0;
+        background:linear-gradient(135deg, #89CFF0, #EAF6FF);
+        border-radius: 0px;
+
+    }
+    #weather-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: column;
+    }
+    #search-bar{
+        text-align: center;
+    }
+    #submit{
+        margin-top: 20px;
+    }
+    #citydisplay{
+        font-size: 1.4rem;
+    }
+    #dark{
+        display: none;
+    }
+}
+
