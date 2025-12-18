@@ -1,4 +1,5 @@
 const btn = document.getElementById("themeToggle");
+const button = document.getElementById("page-change")
 
 btn.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
@@ -26,3 +27,20 @@ function updateTime() {
 }
 
 setInterval(updateTime, 1000); 
+
+button.addEventListener("click", function () {
+    const img = document.getElementById("off-button");
+
+    if (img.src.includes("off-button.png")) {
+        img.src = "Assets/on-button.png";
+        document.getElementById("page-1").style.display = "none"
+        document.getElementById("page-2").style.display = "grid"
+        document.getElementById("page-detail").textContent = "Page 2"
+    } else {
+        img.src = "Assets/off-button.png";
+        document.getElementById("page-2").style.display = "none"
+        document.getElementById("page-1").style.display = "grid"
+        document.getElementById("page-detail").textContent = "Page 1"
+    }
+});
+

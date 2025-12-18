@@ -8,6 +8,10 @@ Fonts - https://fonts.google.com/
 
 Unicode Generator - https://symbl.cc/
 
+Icons - https://www.flaticon.com/
+
+GitGuardian - https://dashboard.gitguardian.com/workspace/810295/get-started
+
 ## CSS BreakPoints
 
 ### Common Media Query breakpoints

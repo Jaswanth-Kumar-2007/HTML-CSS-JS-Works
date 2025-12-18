@@ -34,7 +34,7 @@ body{
     background-image: url("Assets/light-bg.jpg");
     background-size: cover;
 }
-main{
+#page-1{
     display:grid;
     font-family: "Bitcount Prop Single",Arial;
     text-align: center;
@@ -43,6 +43,17 @@ main{
     column-gap: 10px;
     row-gap: 20px;
     grid-template-columns: repeat(8,1fr);
+}
+
+#page-2{
+    display:none;
+    font-family: "Bitcount Prop Single",Arial;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    column-gap: 10px;
+    row-gap: 20px;
+    grid-template-columns: repeat(8,1fr);   
 }
 img{
     width:64px;
@@ -87,7 +98,7 @@ footer{
     bottom:0;
     width:100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     text-align: center;
     font-family: "Bitcount Prop Single",Arial;
 }
@@ -96,6 +107,12 @@ footer{
     background-size:cover;
     color: white;
 }
+
+
+#page-change{
+    border:none;
+}
+
 
 @media (max-width: 480px) {
     #jio,#signal,#battery{
@@ -111,7 +128,7 @@ footer{
     header{
         width:100%;
     }
-    main{
+    #page-1{
         display:grid;
         margin-top: 20px;
         margin-left: 20px;
@@ -120,12 +137,21 @@ footer{
         font-size: 0.8rem;
         grid-template-columns: repeat(4,1fr);
     }
+    #page-2{
+        display:none;
+        margin-top: 20px;
+        margin-left: 20px;
+        column-gap: 10px;
+        row-gap: 20px;
+        font-size: 0.8rem;
+        grid-template-columns: repeat(4,1fr);    
+    }
     footer{
         position: fixed;
         bottom:0;
         width:100%;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
         row-gap: 40px;
         justify-content: space-around;
         text-align: center;
