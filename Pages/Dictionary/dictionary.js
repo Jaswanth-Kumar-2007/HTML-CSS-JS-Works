@@ -6,7 +6,7 @@ card.style.display = "none";
 
 wordsearch.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const word = wordinput.value;
+    const word = wordinput.value.trim();
     try {
         const worddata = await getworddata(word);
         if (!worddata || worddata.title === "No Definitions Found") {

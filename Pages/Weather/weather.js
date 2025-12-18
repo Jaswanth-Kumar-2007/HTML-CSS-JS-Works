@@ -15,7 +15,7 @@ card.style.display = "none";
 
 weatherForm.addEventListener("submit",async event => {
      event.preventDefault();
-     const city = cityInput.value;
+     const city = cityInput.value.trim();
      const latdata = await getlatandlong(city);
      if (latdata.results && latdata.results.length > 0){
         console.log("City Found")
