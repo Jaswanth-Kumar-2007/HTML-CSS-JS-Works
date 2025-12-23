@@ -1,16 +1,6 @@
 const number = document.getElementById("number");
 let set = document.getElementById("set");
 const btn = document.getElementById("back")
-document.getElementById("sec-2").style.display = "none";
-document.getElementById("sec-1").style.display = "none";
-const name = prompt("Enter your Name: ")  
-if (name.toLowerCase() == "sathvik"){
-    alert("Arey Manishi You are not Allowed")
-    document.getElementById("sec-2").style.display = "none";
-    document.getElementById("sec-1").style.display = "none";    
-}else{
-    alert("Hi " + name + " Welcome to this Randomizer!")
-}
 
 function random(data){
     let s = Math.round(Math.random() * number.value)
