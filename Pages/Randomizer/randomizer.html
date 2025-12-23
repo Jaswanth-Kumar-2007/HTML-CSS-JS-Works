@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomizer</title>
+    <link href="randomizer.css" rel="stylesheet">
+</head>
+<body>
+    <div id="sec-1">
+        <form id="num">
+            <input id="number" type="number" placeholder="Enter Number" required>
+            <input id="sub" type="submit" value="Get Number">
+            <p id="num-error"></p>
+        </form>
+    </div>
+    <section id="sec-2">
+        <div id="instruction">
+            <h2>INSTRUCTIONS : </h2>
+            <ul>
+                <li>Enter Value with Commas</li>
+                <li>Check Values Once or Twice they are Correct</li>
+            </ul>
+        </div>
+        <div id="display">
+            <input id="dis" readonly>
+        </div>
+        <form id="val">
+            <input id="set" type="text" placeholder="Enter Values" required>
+            <input id="subm" type="submit" value="Get Random">
+        </form>
+        <div id="black">
+            <button id="back">Back</button>
+        </div>
+    </section>
+    <script src="randomizer.js"></script>
+</body>
+</html>

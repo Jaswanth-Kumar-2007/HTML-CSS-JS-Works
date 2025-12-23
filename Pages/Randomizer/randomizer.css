@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#num{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap:20px;
+    background-color: #8499B1;
+    height: 30vh;
+    width:20vw;
+    border:3px solid black;
+    border-radius: 50px;
+}
+
+#number{
+    border:5px solid black;
+    text-align: center;
+    height:2vh;
+    border-radius: 50px;
+}
+
+#sub{
+    border:2px solid black;
+    border-radius: 50px;
+}
+
+
+#sec-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:40px;
+    border:1px solid black;
+    padding:20px;
+    height:50vh;
+    width:50vw;
+    border-radius: 50px;
+    background-color: #F1AB86;
+}
+
+#instruction{
+    padding:10px;
+    width:100%;
+    text-align: left;
+    text-decoration: underline;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    border:2px solid black;
+    border-radius: 50px;
+}
+
+#instruction ul{
+    margin:20px;
+    list-style-position: inside;
+    text-decoration: none;
+    display:flex;
+    text-align: left;
+    flex-direction: column;
+    gap:10px;
+}
+#dis{
+    width:15vw;
+    height:5vh;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color:white;
+}
+
+#set{
+    border:5px solid black;
+    text-align: center;
+    height:3vh;
+    border-radius: 50px;
+}
+
+#back{
+    width:50px;
+    height:50px;
+    border-radius: 50px;
+}
+
+#back:hover{
+    background-color: black;
+    color:white;
+}
+
+
+@media (max-width:480px){
+    #num{
+        width:80vw;
+        height:80vh;
+        border:2px solid black;
+    }
+    #sec-2{
+        width:80vw;
+        height:80vh;
+    }
+    #val{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+    }
+    #dis{
+        width:80vw;
+    }
+
+}
