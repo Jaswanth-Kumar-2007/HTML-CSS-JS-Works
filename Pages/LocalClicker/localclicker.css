@@ -39,7 +39,7 @@ body{
 
 @media (max-width:480px){
     #display{
-        width:60vw;
+        width:85vw;
         height:60vh;
         gap:40px;    
     }

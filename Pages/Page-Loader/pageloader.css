@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Dancing Script";
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FF674D;
+}
+
+#load{
+    font-size: 40px;
+    animation-name: myanimation;
+    animation-duration: 10s;
+}
+
+#load::after{
+    content: '\2026';
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+    animation: dots steps(4,end) 2s infinite;
+    width: 0px;
+}
+
+@keyframes dots{
+    to {
+        width: 1.25em;
+    }
+}
+
+#display{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-decoration: underline;
+}

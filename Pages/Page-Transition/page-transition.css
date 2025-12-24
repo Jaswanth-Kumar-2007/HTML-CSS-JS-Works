@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#bg, #mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#back, #front {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+#mask {
+  z-index: 2;
+  pointer-events: none;
+}
+
+#text{
+  position: absolute;
+  z-index: 3;
+  color: white;
+  bottom: 0;
+}

@@ -12,6 +12,7 @@ if (saved) {
   localStorage.setItem("i",num);
 }else{
     localStorage.setItem("i",0);
+    display.value = 0;
     console.log(0);
 }
 
