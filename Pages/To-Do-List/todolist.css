@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FF8C61;
+}
+
+#todolist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:40px;
+    background-color: #FAA275;
+    padding:20px;
+    border-radius: 50px;
+    width: auto;
+    height: auto;
+}
+
+#task-value{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#task-display{
+    width: 100%;
+    text-align: center;
+    border-radius: 50px;
+}
+
+#task-display p{
+    margin: 20px;
+    border-bottom: 2px solid black;
+}
+
+#task-bar{
+    height:2rem;
+    text-align: center;
+    border-radius: 50px;
+}
+
+#submit{
+    border-radius: 50px;
+    width:30%;
+    height: 30%;
+}
+
+#submit:hover{
+    background-color: black;
+    color: white;
+}
