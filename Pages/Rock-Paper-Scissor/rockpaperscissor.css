@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#display-bar{
+    width:20vw;
+    height:5vh;
+    border-radius: 50px;
+    text-align: center;
+
+}
+
+#rockpaperscissor{
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border-radius: 50px;
+    width:60vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:40px;
+}
+
+#game{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap:40px;
+}
+
+#value,#score{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width:100%;
+    color:white;
+}
+
+
+
+button{
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.534);
+}
+
+button:active{
+    background-color:  rgba(255, 255, 255, 0.234) ;
+}
+.image{
+    width:64px;
+    height:64px
+}
+
+
+@media (max-width:480px){
+    #rockpaperscissor{
+        width:100vw;
+    }
+    #display-bar{
+        width:50vw;
+    }
+    button{
+        width:80px;
+        height:80px;
+        border-radius: 50px;
+    }
+}
