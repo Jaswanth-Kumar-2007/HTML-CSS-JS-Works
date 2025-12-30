@@ -55,25 +55,8 @@ th{
     background-color: #ADBCA5;
 }
 
-#rotate-warning {
-    position: fixed;
-    inset: 0;
-    background: #000;
-    color: #fff;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 18px;
-    z-index: 9999;
-    padding: 20px;
-}
-
 
 @media (max-width:480px){
-    body{
-        display: block;
-    }
     th,td{
     text-align: center;
     }
