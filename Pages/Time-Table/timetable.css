@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table,td,tr,th{
+    border: 3px solid black;
+}
+
+
+th,td{
+    text-align: center;
+    padding: 20px;
+}
+
+th{
+    background-color: #354f70a5;
+}
+
+.Day{
+    background-color: #355070;
+    color:white;
+}
+
+.Lab{
+    background-color: #E56B6F;
+}
+
+.Free{
+    background-color: #EAAC8B;
+}
+
+.Maths{
+    background-color: #C7DBE6;
+}
+
+.EC{
+    background-color: #CB769E;
+}
+
+.EE{
+    background-color: #E8B9AB;
+}
+
+.Biology{
+    background-color: #ADBCA5;
+}
+
+#rotate-warning {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    color: #fff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    z-index: 9999;
+    padding: 20px;
+}
+
+
+@media (max-width:480px){
+    body{
+        display: block;
+    }
+    th,td{
+    text-align: center;
+    }
+    table{
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+}
