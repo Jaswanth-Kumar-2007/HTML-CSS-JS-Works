@@ -6,7 +6,7 @@
 }
 
 body{
-    height:100vh;
+    min-height:100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,11 +57,26 @@ th{
 
 
 @media (max-width:480px){
+    body{
+        display: block;
+    }
     th,td{
     text-align: center;
     }
     table{
         overflow-x: auto;
         overflow-y: auto;
+    }
+}
+
+@media (max-width:880px){
+    body{
+        display: block;
+    }
+    th,td{
+        text-align: center;
+    }
+    table{
+        overflow: auto;
     }
 }
