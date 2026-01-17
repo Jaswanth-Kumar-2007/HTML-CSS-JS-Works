@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark-Store</title>
+    <link href="paymentstore.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Dark-Store</h1>
+    </header>
+    <div id="store">
+        <div id="items">
+            <div class="item">
+                <img src="Asset/AK-47.jpg" alt="ak47">
+                <p>AK-47 -> $240</p>
+                <button id="ak47">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="Asset/Poison.jpeg" alt="poison">
+                <p>Poison -> $370</p>
+                <button id="poison">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="Asset/Drugs.jpg" alt="drug">
+                <p>Drug -> $120</p>
+                <button id="drug">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="Asset/FF-Diamond.jpg" alt="ffdiamond">
+                <p>10K Diamond -> $200</p>
+                <button id="diamond">Add to Cart</button>
+            </div>
+                <div class="item">
+                <img src="Asset/Whisky.jpg" alt="whisky">
+                <p>Whisky -> $30</p>
+                <button id="whisky">Add to Cart</button>
+                </div>
+                <div class="item">
+                <img src="Asset/hacker.jpg" alt="hacker">
+                <p>Hacker -> $800</p>
+                <button id="hacker">Add to Cart</button>
+            </div>
+        </div>
+        <div id="carts">
+            <div id="cart">
+                <h2>Cart</h2>
+                <div id="cart-item">
+                </div>
+            </div>
+            <div id="bought">
+                <p id="totalcost">Total : $0</p>
+                <button id="buy">Buy</button>
+            </div>
+        </div>
+    </div>
+    <div id="payment">
+        <div id="container">
+            <div id="qr">
+                <img src="Asset/qr.jpeg" alt="qrcode">
+            </div>
+            <div id="payment-box">
+                <h2>Checkout :</h2>
+                <div id="center">
+                    <p id="payment-value">Total Cost : </p>
+                    <button id="home">Return to Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="paymentstore.js"></script>
+</body>
+</html>
