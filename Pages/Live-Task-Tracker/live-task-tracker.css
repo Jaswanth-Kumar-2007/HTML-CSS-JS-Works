@@ -7,6 +7,7 @@ body{
     align-items: center;
     justify-content: center;
     font-family: Bungee,'Arial';
+    box-sizing: border-box;
 }
 
 h2{
@@ -74,7 +75,7 @@ button:hover{
 
 @media (max-width:768px){
     #container{
-        height:100vh;
+        height:90vh;
         width:100vw;
     }
 }
