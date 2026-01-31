@@ -7,7 +7,7 @@ let res = JSON.parse(localStorage.getItem("store")) || [];
 function renderNotes() {
     noteBox.innerHTML = "";
     for (let i = 0; i < res.length; i++) {
-        noteBox.innerHTML += `<p>${i + 1}. ${res[i]}</p>`;
+        noteBox.innerHTML += `<div class="item"><p>${i + 1}. ${res[i]}</p> <button class="delete">Delete</button></div>`;
     }
 }
 
@@ -27,3 +27,12 @@ button.addEventListener("click",(event)=>{
     input.value = "";
     renderNotes();
 })
+
+const deleteButtons = document.querySelectorAll(".delete");
+
+deleteButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const para = btn.previousElementSibling;
+        para.classList.toggle("done");
+    });
+});
