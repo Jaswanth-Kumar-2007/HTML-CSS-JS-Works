@@ -57,21 +57,6 @@ button:hover{
     font-size: 15px;
 }
 
-.item{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    width:10vw;
-    margin:10px;
-}
-
-.done {
-    text-decoration: line-through;
-    color: white;
-    opacity: 0.5;
-}
-
 
 @media (max-width:768px){
     #container{
