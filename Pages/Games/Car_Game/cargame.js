@@ -142,22 +142,19 @@ function drawGameOver() {
 function checkCollision(enemyX, enemyY) {
     let playerX = currentLane * laneWidth + laneWidth/2 - playerWidth/2;
 
-    if (
-        playerX < enemyX + playerWidth &&
-        playerX + playerWidth > enemyX &&
-        playerY < enemyY + playerHeight &&
-        playerY + playerHeight > enemyY
-    ) {
-        gameOver = true;
-        clearInterval(timerId);
-        bgMusic.pause();
-        explosionSound.play();
+    if (playerX == enemyX) {
+        if (playerY-2 < enemyY && enemyY < playerY+2){
+            gameOver = true;
+            clearInterval(timerId);
+            bgMusic.pause();
+            explosionSound.play();
 
-        explosionActive = true;
-        explosionX = playerX;
-        explosionY = playerY;
+            explosionActive = true;
+            explosionX = playerX;
+            explosionY = playerY;
 
-        return true;
+            return true;
+        }
     }
     return false;
 }

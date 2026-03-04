@@ -8,6 +8,10 @@ let myarray2 = [];
 let flames = ["f","l","a","m","e","s"];
 let answer = document.getElementById("ans");
 
+function isAlpha(char) {
+    return /^[A-Za-z]$/.test(char);
+}
+
 res.addEventListener("click",(event)=>{
     event.preventDefault();
 
@@ -18,12 +22,27 @@ res.addEventListener("click",(event)=>{
     i1 = Per1.value;
     i2 = Per2.value;
 
+    if (i1 == "" || i2 == ""){
+        answer.value = "Wrong Input";
+        return;
+    }
+
     for(let i = 0;i < i1.length;i++){
-        myarray1.push(i1[i].toLowerCase());
+        if(isAlpha(i1[i])){
+            myarray1.push(i1[i].toLowerCase());
+        }else{
+            answer.value = "Wrong Input";
+            return;
+        }
     }
     console.log(myarray1);
     for(let j = 0;j < i2.length;j++){
-        myarray2.push(i2[j].toLowerCase());
+        if(isAlpha(i2[j])){
+            myarray2.push(i2[j].toLowerCase());
+        }else{
+            answer.value = "Wrong Input";
+            return;
+        }
     }
     console.log(myarray2);
     for(let x = 0;x < myarray1.length;x++){
@@ -48,7 +67,7 @@ res.addEventListener("click",(event)=>{
         flames.splice(index,1);
         console.log(flames);
     }
-    
+
     if(flames[0] == "f"){
         console.log("Friend");
         answer.value = "Friend";
