@@ -1,0 +1,23 @@
+body{
+    margin:0;
+    padding:0;
+    width:100vw;
+    height:90vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#gameCanvas{
+    border: 2px solid black;
+}
+
+#other{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    font-size: 30px;
+}
