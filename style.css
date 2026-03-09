@@ -31,7 +31,8 @@ header{
 }
 */
 body{
-    background-image: url("Assets/light-bg.jpg");
+    background-color: rgb(0, 0, 0);
+    /* background-image: url("Assets/light-bg.jpg"); */
     background-size: cover;
 }
 #page-1{
@@ -43,7 +44,9 @@ body{
     column-gap: 10px;
     row-gap: 20px;
     grid-template-columns: repeat(8,1fr);
+    color: white;
 }
+
 
 #page-2{
     display:none;
@@ -54,8 +57,18 @@ body{
     column-gap: 10px;
     row-gap: 20px;
     grid-template-columns: repeat(8,1fr);   
+    color: white;
 }
 img{
+    width:64px;
+    height:64px;
+}
+
+#page-switcher{
+    background-color: #000000;
+}
+
+button{
     width:64px;
     height:64px;
 }
@@ -95,6 +108,7 @@ img{
 
 footer{
     position: fixed;
+    color: white;
     bottom:0;
     width:100%;
     display: grid;
