@@ -1,4 +1,4 @@
-alert("Welcome to KJK Access")
+// alert("Welcome to KJK Access")
 
 const btn = document.getElementById("themeToggle");
 const button = document.getElementById("page-change")
