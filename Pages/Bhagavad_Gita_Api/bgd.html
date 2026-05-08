@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagavad Gita</title>
+    <link href="bgd.css" rel="stylesheet">
+</head>
+<body>
+    <header>Bhagavad Gita</header>
+    <form id="bgd_form">
+        <div>
+            <label>Select Language :</label>
+            <select id="bgd_lang">
+                <option id="bgd_tel" name="tel" value="tel">Telugu</option>
+                <option id="bgd_odia" name="odia" value="odi">Odia</option>
+                <option id="bgd_eng" name="english" value="eng">English</option>
+            </select>
+        </div>
+        <div>
+            <label>Enter Chapter :</label>
+            <input id="bgd_cha" name="bgd_chapter" type="number">
+        </div>
+        <div>
+            <label>Enter Verse :</label>
+            <input id="bgd_ver" name="bgd_verse" type="number">
+        </div>
+        <button id="bgd_sub" type="submit">Submit</button>
+    </form>
+
+    <div>
+        <textarea id="detail_bar" readonly></textarea>
+    </div>
+    <script src="bgd.js"></script>
+</body>
+</html>
