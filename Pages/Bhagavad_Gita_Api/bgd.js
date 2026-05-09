@@ -9,7 +9,7 @@ let lang = "";
 
 async function getbgd(cha,ver,lang){
     try{
-        let data = `https://corsproxy.io/?https://gita-api.vercel.app/${lang}/verse/${cha}/${ver}`;
+        let data = `https://gita-api.vercel.app/${lang}/verse/${cha}/${ver}`;
         let bgd = await fetch(data);
         let res = await bgd.json();
         console.log(bgd);
